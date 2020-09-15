@@ -149,6 +149,7 @@ void main(){
 
 //5. 字符串的查找 包含 拼接 截取 大小写转换
 
+
 //包含
 int contain(char *str, char *subStr)
 {
@@ -224,49 +225,49 @@ void replace(char* str,char* res,char* des,char* result){
 void main()
 {
 
-    // //5.1  查找 strstr
-    // char *str = "tomorrow is another day";
-    // char *subStr = "no";
-    // //返回的是字符串第一次出现的位置
-    // char *pos = strstr(str, subStr);
-    // //若直接打印 后面会乱起八糟的其他东西  nother day绗竴娆″嚭鐜扮殑浣嶇疆鏄
-    // printf("pos is : %s \n", pos);
+    //5.1  查找 strstr
+    char *str = "tomorrow is another day";
+    char *subStr = "no";
+    //返回的是字符串第一次出现的位置
+    char *pos = strstr(str, subStr);
+    //若直接打印 后面会乱起八糟的其他东西  nother day绗竴娆″嚭鐜扮殑浣嶇疆鏄
+    printf("pos is : %s \n", pos);
 
-    // int position = pos - str;
-    // printf("the first postion of no is : %d \n", position);
+    int position = pos - str;
+    printf("the first postion of no is : %d \n", position);
 
-    // //5.2 包含
-    // contain(str, subStr);
-    // char *subStr2 = "hello";
-    // contain(str, subStr2);
+    //5.2 包含
+    contain(str, subStr);
+    char *subStr2 = "hello";
+    contain(str, subStr2);
 
-    // //5.3 拷贝 strcpy
-    // int length = strlen(str);
-    // char cpy[length];
-    // strcpy(cpy, str);
-    // printf("cpy is : %s \n", cpy);
+    //5.3 拷贝 strcpy
+    int length = strlen(str);
+    char cpy[length];
+    strcpy(cpy, str);
+    printf("cpy is : %s \n", cpy);
 
-    // //5.4 拼接 strcat
-    // char *a = "hello ";
-    // char *b = "world";
-    // char concatStr[strlen(a) + strlen(b)];
-    // strcpy(concatStr, a);
-    // strcat(concatStr, b);
-    // printf("concatStr is :  %s \n", concatStr);
+    //5.4 拼接 strcat
+    char *a = "hello ";
+    char *b = "world";
+    char concatStr[strlen(a) + strlen(b)];
+    strcpy(concatStr, a);
+    strcat(concatStr, b);
+    printf("concatStr is :  %s \n", concatStr);
 
-    // // //5.5 截取
-    // char* hello = "helloworld";
-    // char result[3];
-    // subString(hello,1,2,result);
+    // //5.5 截取
+    char* hello = "helloworld";
+    char result[3];
+    subString(hello,1,2,result);
     
-    // printf("substring(%s,%d,%d) is %s \n",hello,1,2,result);
+    printf("substring(%s,%d,%d) is %s \n",hello,1,2,result);
 
-    // //5.6 大小写转化
+    //5.6 大小写转化
 
-    // char* upper = "THISHAHAha";
-    // char lower[strlen(upper)+1];
-    // toLowerCase(upper,lower);
-    // printf("%s toLowerCase : %s \n",upper,lower);
+    char* upper = "THISHAHAha";
+    char lower[strlen(upper)+1];
+    toLowerCase(upper,lower);
+    printf("%s toLowerCase : %s \n",upper,lower);
 
     //5.7 替换
 

@@ -134,7 +134,7 @@ void main(){
 */
 
 //5. 方法回调
-/*
+
 void callback(int current,int total){
     printf("current is %d , total is %d ",current,total);
 }
@@ -149,6 +149,6 @@ void main(){
     getchar();
 
 }
-*/
+
 
 
