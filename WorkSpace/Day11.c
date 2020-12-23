@@ -126,12 +126,13 @@ void main(){
 
 
 
+
 //5. 文件加密 解密 
 
 //5.1 每个字节都加密
-/*
-//加密
 
+//加密
+/*
 void main(){
     char* fileName = "timg.jpg";
     char* encryptFileName = "timg_encrypt.jpg";

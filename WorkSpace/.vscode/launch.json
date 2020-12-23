@@ -6,7 +6,7 @@
             //配置名称，在启动配置下拉菜单中显示
             "name": "(gdb) Launch",
             //调试会话开始前要运行的任务
-            "preLaunchTask": "build",
+            "preLaunchTask": "g++.exe build active file",
             //配置类型
             "type": "cppdbg",
             // 请求配置类型，可以为启动（launch）或附加（attach）
